@@ -96,5 +96,24 @@ angular.module('starter.services', [])
       //}
     }
   }
+})
+
+.service('AuthService', function($http) {
+  return {
+
+    login: function() {
+      return null
+    },
+
+    logout: function() {
+      return null
+    },
+
+    signup: function() {
+      var u = new User(userObj)
+      return $http.post(url, u)
+    }
+
+  }
 });
 
